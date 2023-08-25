@@ -7,6 +7,15 @@
     <link
       rel="tab icon"
       href="https://toppng.com/uploads/preview/mangekyou-sharingan-11550711263ztdwd9f062.png" />
+    <!-- Scroll Reveal -->
+    <!--  -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bevan&family=Dancing+Script&family=Grandiflora+One&family=Handjet:wght@500&family=Inter&family=Lora&family=Overpass:wght@100&family=Playfair+Display&family=Poppins:wght@900&family=Press+Start+2P&family=Quicksand:wght@300&family=Rock+3D&family=Shippori+Mincho+B1&display=swap"
+      rel="stylesheet" />
+    <!--  -->
     <title>Dattebayo</title>
   </head>
   <div class="loading">
@@ -26,6 +35,24 @@
     </div>
   </div>
   <body>
+    <div class="contactForm hidden">
+      <img
+        src="https://th.bing.com/th/id/R.c7c2ca218a8630433ec4baf2dc05aa1d?rik=YIjX0qMtKrsbuA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2ff%2f6%2f2%2f178542.jpg&ehk=5jfrgi0B%2bA3acpL%2bO5CsDdqiPV%2bC25JWqsP9wAFLjss%3d&risl=&pid=ImgRaw&r=0"
+        alt="" />
+      <form action="" method="get">
+        <h1 class="closeContactMenu">&times;</h1>
+        <h1>Contact From</h1>
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <textarea
+          name="message"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
     <div class="menuOption hidden">
       <img
         src="https://i.pinimg.com/736x/a2/96/af/a296af0a7bde89830944575c02a9d0ca--madara-uchiha-naruto.jpg"
@@ -56,7 +83,10 @@
     </div>
     <nav>
       <img class="navIcon" src="images/narutoLogo.png" alt="" />
-      <button class="menu"><img src="images/menu.png" alt="" /></button>
+      <span class="rightNav">
+        <button class="contactUs"><a href="">Contact Us</a></button>
+        <button class="menu"><img src="images/menu.png" alt="" /></button>
+      </span>
     </nav>
     <main>
       <div class="topArea">
@@ -72,6 +102,31 @@
           <span><img src="images/letter_t.webp" /></span>
           <span><img src="images/letter_o.webp" /></span>
         </h1>
+      </div>
+      <div class="about">
+        <img src="images/bg_story_en.webp" alt="" />
+        <img
+          src="https://i.pinimg.com/originals/c3/e2/41/c3e24195915dea1c87c0d8ae2d476c72.jpg"
+          class="aboutNarutoManga"
+          alt="" />
+        <div class="story">
+          <img
+            class="storyImage"
+            src="https://naruto-official.com/common/brush/en/top_story.svg"
+            alt="" />
+        </div>
+        <div class="aboutNaruto fade-in">
+          <div class="aboutNarutoContent">
+            <h1>NARUTO</h1>
+            <p>
+              From its debut in 1999, all the way to its stunning conclusion—
+              look back on the trials and tribulations of an outcast ninja’s
+              coming of age and the famous scenes that shaped his story!!
+            </p>
+            <button><h2>MORE INFO</h2></button>
+            <img src="images/char_naruto.webp" alt="" />
+          </div>
+        </div>
       </div>
     </main>
   </body>
