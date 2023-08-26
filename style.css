@@ -14,7 +14,7 @@ body {
 .loading {
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: fixed;
   background: transparent;
   object-fit: contain;
   overflow: hidden;
