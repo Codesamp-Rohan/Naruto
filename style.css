@@ -262,6 +262,7 @@ nav {
   padding: 50px 100px;
   backdrop-filter: brightness(0.6);
   justify-content: center;
+  z-index: 2;
 }
 .narutoTitle img {
   /* width: clamp(40px, 5vw, 160px); */
@@ -361,7 +362,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-block: 100px;
 }
 .characterCard h1 {
   font-size: 6rem;
@@ -382,14 +383,10 @@ nav {
   flex-wrap: wrap;
   gap: 20px;
   position: relative;
-  margin-bottom: 100px;
   padding: 30px;
   justify-content: center;
   overflow: hidden;
 }
-/* .card {
-  overflow: hidden;
-} */
 .card img {
   width: 15vw;
   height: 30vh;
@@ -410,4 +407,27 @@ nav {
 }
 .card p {
   font-size: 12px;
+}
+.tailBeastBgImg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  clip-path: polygon(0 calc(10vh), 100% 0%, 100% calc(100% - 10vh), 0 100%);
+}
+.lineScroll {
+  position: relative;
+}
+.madaraImage {
+  position: absolute;
+}
+.line-1 {
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  position: fixed;
+  bottom: 0%;
+  white-space: nowrap;
+  transform: rotate(-2.6deg);
+  display: flex;
+  z-index: 1;
 }
