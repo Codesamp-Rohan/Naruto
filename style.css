@@ -18,6 +18,7 @@ body {
   background: transparent;
   object-fit: contain;
   overflow: hidden;
+  z-index: 999;
 }
 .loading img {
   width: 100vw;
@@ -411,23 +412,118 @@ nav {
 .tailBeastBgImg {
   position: relative;
   width: 100vw;
-  height: 100vh;
   object-fit: cover;
   clip-path: polygon(0 calc(10vh), 100% 0%, 100% calc(100% - 10vh), 0 100%);
 }
-.lineScroll {
+.madaraImage {
+  overflow: hidden;
   position: relative;
 }
-.madaraImage {
-  position: absolute;
-}
-.line-1 {
-  color: rgb(0, 0, 0);
-  font-size: 60px;
-  position: fixed;
-  bottom: 0%;
-  white-space: nowrap;
-  transform: rotate(-2.6deg);
+
+.ghost {
+  background: #fb9427;
+  width: 250vw;
   display: flex;
-  z-index: 1;
+  flex-direction: row;
+}
+.ghost::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ghostSlide {
+  width: 100vw;
+  display: inline-block;
+  /* flex-direction: row; */
+  animation: 15s slide infinite linear;
+  position: relative;
+}
+@keyframes slide {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+.ghost h1 {
+  width: 100vw;
+  font-size: 8rem;
+  margin: 0 20px;
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+/* Media */
+@media screen and (max-width: 1100px) {
+  .narutoTitle img {
+    width: 6rem;
+  }
+  .ghost h1 {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  .tailBeastBgImg {
+    height: 100vh;
+  }
+  .narutoTitle img {
+    width: 4rem;
+  }
+  .card img {
+    width: 20vw !important;
+  }
+  .cardImage {
+    width: 20vw !important;
+    height: auto !important;
+    aspect-ratio: 3/4;
+  }
+  .ghost h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ghost h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .characterCard h1 {
+    font-size: 4rem;
+  }
+  .ghost h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .narutoTitle img {
+    width: 3rem;
+  }
+  .card img {
+    width: 40vw !important;
+    height: 40vh !important;
+  }
+  .cardImage {
+    width: 40vw !important;
+    height: 40vh !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .ghost h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .characterCard h1 {
+    font-size: 3rem;
+  }
+  .characterCardHeading::after {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .ghost h1 {
+    font-size: 2.4rem;
+  }
 }
