@@ -1,0 +1,72 @@
+/* BODY 2 */
+.third {
+  background-color: #fb9427;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: -10;
+}
+.closeMenuSecond {
+  position: absolute;
+  display: block;
+  z-index: 999;
+  top: 0;
+  left: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+}
+.timeline {
+  width: 2px;
+  height: 1000vh;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -9;
+}
+.chapterTitle {
+  text-align: center;
+}
+.chapterTitle h1 {
+  font-size: 8rem;
+  background-color: #fb9427;
+}
+.chapter1 {
+  text-transform: uppercase;
+}
+.chp1Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chp1LeftContent {
+  width: 50vw;
+  text-align: end;
+  padding-inline: 30px;
+}
+.chp1RightContent {
+  width: 50vw;
+  padding-inline: 30px;
+}
+.chp1LeftContent h1 {
+  font-size: clamp(1rem, 10vw, 5rem);
+  color: #fb9427;
+  -webkit-text-stroke: 0.6px #ffffff;
+}
+.chp1RightContent h1 {
+  -webkit-text-stroke: 0.6px #000;
+  color: #ffffff;
+}
+/* .chp1RightContent h2 {
+}
+.chp1RightContent p {
+} */
+.bgNaruto {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+}
+.chapter1:nth-child(3)::after {
+  background: url("https://naruto-official.com/about/story/en/naruto/03/ribbon.svg");
+}

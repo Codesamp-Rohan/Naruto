@@ -226,12 +226,3 @@ for ([key, value] of Object.entries(tailBeasts)) {
 
   beasts.insertAdjacentHTML("beforeend", html);
 }
-
-// UCHIHA TEXT SCROLL
-// let line1 = document.querySelector(".line-1");
-
-// window.onscroll = () => {
-//   let pos = window.scrollY - 4500;
-//   line1.style.left = `${pos}px`;
-//   console.log(pos);
-// };

@@ -7,6 +7,8 @@
 }
 body {
   background-color: #fb9427;
+  position: relative;
+  z-index: -1;
 }
 .hidden {
   display: none;
