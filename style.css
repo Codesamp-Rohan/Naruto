@@ -4,6 +4,7 @@
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: "Bebas Neue", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #fb9427;
@@ -457,6 +458,51 @@ nav {
   -webkit-text-stroke: 1px #ffffff;
 }
 
+.line {
+  width: 100vw;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 10px;
+}
+.sasukeVSnaruto {
+  /* The image used */
+  background-image: url("images/NVSS.webp");
+
+  /* Set a specific height */
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sasukeVSnarutoMsg {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.sasukeVSnarutoText {
+  text-align: center;
+  font-size: 6rem;
+}
+.sasukeVSnarutoPara {
+  text-align: center;
+  text-transform: uppercase;
+}
+.sasukeVSnarutoBtn {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 30px;
+}
+.sasukeVSnarutoBtn button {
+  width: 40%;
+  font-size: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sasukeVSnarutoBtn button:hover {
+  color: #fff;
+  background-color: #000;
+}
 /* Media */
 @media screen and (max-width: 1100px) {
   .narutoTitle img {

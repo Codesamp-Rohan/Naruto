@@ -11,12 +11,14 @@ knowMoreBtn.addEventListener("click", function () {
   main1.classList.add("hidden");
   main2.classList.add("hidden");
   main3.classList.remove("hidden");
+  // main4.classList.add("hidden");
 });
 
 closeMenuSecond.addEventListener("click", function () {
   main3.classList.add("hidden");
   main1.classList.remove("hidden");
   main2.classList.remove("hidden");
+  // main4.classList.remove("hidden");
 });
 
 // Repeating years and content
