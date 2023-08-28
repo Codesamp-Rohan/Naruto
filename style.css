@@ -503,6 +503,18 @@ nav {
   color: #fff;
   background-color: #000;
 }
+.pageTop {
+  position: fixed;
+  z-index: 2000;
+  width: 5vw;
+  bottom: 10px;
+  right: 10px;
+  mix-blend-mode: multiply;
+}
+.pageTop img {
+  width: 30px;
+  height: auto;
+}
 /* Media */
 @media screen and (max-width: 1100px) {
   .narutoTitle img {
@@ -535,18 +547,41 @@ nav {
   .ghost h1 {
     font-size: 5rem;
   }
+  .story img {
+    width: 80vw !important;
+  }
 }
 @media screen and (max-width: 700px) {
+  .sasukeGrpImg,
+  narutoGrpImg {
+    object-fit: cover !important;
+  }
+  .sasukeAbout,
+  .narutoAbout {
+    width: 90vw !important;
+  }
+  .narutoTitle {
+    width: 100vw;
+  }
   .characterCard h1 {
     font-size: 4rem;
   }
   .ghost h1 {
     font-size: 4rem;
   }
+  .sasukeFooter h1,
+  .narutoFooter h1 {
+    font-size: 5rem !important;
+  }
 }
 @media screen and (max-width: 600px) {
-  .narutoTitle img {
-    width: 3rem;
+  form {
+    width: 100vw !important;
+    height: 100vh !important;
+    top: 0% !important;
+    left: 0% !important;
+    transform: translate(0%, 0%) !important;
+    z-index: 100;
   }
   .card img {
     width: 40vw !important;
@@ -561,17 +596,44 @@ nav {
   .ghost h1 {
     font-size: 3rem;
   }
+  .sasukeFooter h1,
+  .narutoFooter h1 {
+    font-size: 4.5rem !important;
+  }
 }
 @media screen and (max-width: 500px) {
+  .sasukeFooter h1,
+  .narutoFooter h1 {
+    font-size: 4rem !important;
+  }
+  .narutoTitle img {
+    width: 2rem;
+  }
   .characterCard h1 {
     font-size: 3rem;
   }
   .characterCardHeading::after {
     margin-top: 0px;
   }
+  .kakashiStyle {
+    margin-top: 100px;
+  }
+  .aboutNarutoContent {
+    width: 70vw;
+  }
+  .aboutNaruto img {
+    left: 70vw !important;
+  }
 }
 @media screen and (max-width: 410px) {
   .ghost h1 {
     font-size: 2.4rem;
+  }
+  .sasukeFooter h1,
+  .narutoFooter h1 {
+    font-size: 3rem !important;
+  }
+  .kakashiStyle {
+    margin-top: 0px;
   }
 }

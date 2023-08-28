@@ -3,6 +3,7 @@ const loader = document.querySelector(".loading");
 window.addEventListener("load", function () {
   loader.classList.add("hidden");
 });
+
 // Menu Bar
 const openMenu = document.querySelector(".menu");
 const closeMenu = document.querySelector(".closeMenu");
@@ -229,23 +230,15 @@ for ([key, value] of Object.entries(tailBeasts)) {
 
 const sasukeBtn = document.querySelector(".sasukeBtn");
 const narutoBtn = document.querySelector(".narutoBtn");
-// const sasukeDetail = document.querySelector(".sasukeDetail");
-// const narutoDetail = document.querySelector(".narutoDetail");
 
 const main4 = document.querySelector(".forth");
 const main5 = document.querySelector(".fifth");
 
 sasukeBtn.addEventListener("click", function () {
-  // sasukeDetail.classList.remove("hidden");
-  // narutoDetail.classList.add("hidden");
-  // main4.classList.remove("hidden");
   main4.classList.remove("hidden");
   main5.classList.add("hidden");
 });
 narutoBtn.addEventListener("click", function () {
-  // narutoDetail.classList.remove("hidden");
-  // sasukeDetail.classList.add("hidden");
-  // main4.classList.remove("hidden");
   main5.classList.remove("hidden");
   main4.classList.add("hidden");
 });
