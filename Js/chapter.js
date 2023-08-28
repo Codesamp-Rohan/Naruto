@@ -11,14 +11,14 @@ knowMoreBtn.addEventListener("click", function () {
   main1.classList.add("hidden");
   main2.classList.add("hidden");
   main3.classList.remove("hidden");
-  // main4.classList.add("hidden");
+  main4.classList.add("hidden");
 });
 
 closeMenuSecond.addEventListener("click", function () {
   main3.classList.add("hidden");
   main1.classList.remove("hidden");
   main2.classList.remove("hidden");
-  // main4.classList.remove("hidden");
+  main4.classList.add("hidden");
 });
 
 // Repeating years and content
@@ -30,11 +30,11 @@ const chapters = {
   2000: ["02", "mission in the land of waves!", "2"],
   2001: ["03", "the chunnin exam", "3"],
   2002: ["04", "the destruction of the hidden leaf village", "4"],
-  2003: ["05", "invasion of the akatsuki!"],
-  2003: ["06", "clash! the legendary sanin"],
-  2003: ["07", "mission: bring back sasuke"],
+  2003: ["05", "invasion of the akatsuki!", "5"],
+  "": ["06", "clash! the legendary sanin"],
+  "": ["07", "mission: bring back sasuke", "7"],
   2005: ["08", "kakashi's cronicles: a boy's life on the battlefield"],
-  2005: ["09", "growth"],
+  "": ["09", "growth"],
   2006: ["10", "orochimaru vs sasuke"],
 };
 
